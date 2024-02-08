@@ -27,7 +27,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     # Custom Apps
-    'app_reviews.app.AppsReviewsConfig',
+    'app_reviews.apps.AppReviewsConfig',
 ]
 
 MIDDLEWARE = [
