@@ -1,9 +1,7 @@
 from django.contrib import admin
-from django.urls import path
-import app_reviews.views
+from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', app_reviews.views.index),
-    path('book-search/', app_reviews.views.book_search),
+    path('', include('app_reviews.urls', namespace='app_reviews')),
 ]
